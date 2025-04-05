@@ -69,6 +69,7 @@ text-align: center; }
 	<li><a href="?page={{ page_obj.next_page_number }}" class="btn btn-outline-info" style="font-family: sans-serif;"> NEXT »</a></li>
 
 	{% endif %}
+	<li><a href="{% url 'create_post' %}" class="btn btn-success">Create New Blog</a></li>
 </ul>
 {% endif %}
 {%endblock%}
